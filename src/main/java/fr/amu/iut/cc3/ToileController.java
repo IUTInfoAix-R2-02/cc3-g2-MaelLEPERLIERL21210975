@@ -103,6 +103,8 @@ public class ToileController implements Initializable {
         }
         else {
 
+            messageErreur.setVisible(false);
+
             dot1 = new Circle(10, 20, 5, Color.BLACK);
             dot2 = new Circle(10, 20, 5, Color.BLACK);
             dot3 = new Circle(10, 20, 5, Color.BLACK);
