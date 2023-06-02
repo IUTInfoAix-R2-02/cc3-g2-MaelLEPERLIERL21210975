@@ -19,5 +19,6 @@ Line {
 }
 
 HBox {
-    -fx-spacing: 50px;
+    -fx-padding: 1em;
+    -fx-spacing: 40px;
 }

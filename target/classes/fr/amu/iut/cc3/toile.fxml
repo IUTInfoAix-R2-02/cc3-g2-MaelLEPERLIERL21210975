@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.Button?>
-<HBox id="scene" prefHeight="420.0" prefWidth="750.0" spacing="20.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.amu.iut.cc3.ToileController">
+<HBox id="scene" prefHeight="428.0" prefWidth="750.0" spacing="20.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.amu.iut.cc3.ToileController">
     <Pane prefHeight="400.0" prefWidth="400.0">
         <Circle centerX="200.0" centerY="200.0" radius="200.0" styleClass="toile" />
         <Circle centerX="200.0" centerY="200.0" radius="150.0" styleClass="toile" />
@@ -30,34 +27,37 @@
         <Text text="Compétence 6" x="26" y="99" />
         <Pane fx:id="toile" styleClass="toile" />
     </Pane>
-    <VBox prefHeight="420.0" prefWidth="232.0">
+    <VBox prefHeight="394.0" prefWidth="300.0">
         <HBox>
-            <Label text="Compétence 1 - Réaliser" alignment="CENTER"/>
-            <TextField fx:id="comp1" prefHeight="10" prefWidth="40" />
+            <Label text="Compétence 1 - Réaliser" />
+            <TextField fx:id="comp1" prefHeight="24.0" prefWidth="46.0" />
         </HBox>
         <HBox>
-            <Label text="Compétence 2 - Optimiser" alignment="CENTER"/>
-            <TextField fx:id="comp2" prefHeight="10" prefWidth="40"/>
+            <Label text="Compétence 2 - Optimiser" />
+            <TextField fx:id="comp2" prefHeight="10" prefWidth="40" />
         </HBox>
         <HBox>
-            <Label text="Compétence 3 - Administrer" alignment="CENTER"/>
-            <TextField fx:id="comp3" prefHeight="10" prefWidth="40"/>
+            <Label text="Compétence 3 - Administrer" />
+            <TextField fx:id="comp3" prefHeight="10" prefWidth="40" />
         </HBox>
         <HBox>
-            <Label text="Compétence 4 - Gérer" alignment="CENTER"/>
-            <TextField fx:id="comp4" prefHeight="10" prefWidth="40"/>
+            <Label text="Compétence 4 - Gérer" />
+            <TextField fx:id="comp4" prefHeight="10" prefWidth="40" />
         </HBox>
         <HBox>
-            <Label text="Compétence 5 - Conduire" alignment="CENTER"/>
-            <TextField fx:id="comp5" prefHeight="10" prefWidth="40"/>
+            <Label text="Compétence 5 - Conduire" />
+            <TextField fx:id="comp5" prefHeight="10" prefWidth="40" />
+        </HBox>
+        <HBox prefHeight="50.0" prefWidth="262.0">
+            <Label text="Compétence 6 - Collaborer" />
+            <TextField fx:id="comp6" prefHeight="10" prefWidth="40" />
         </HBox>
         <HBox>
-            <Label text="Compétence 6 - Collaborer" alignment="CENTER"/>
-            <TextField fx:id="comp6" prefHeight="10" prefWidth="20"/>
+            <Label fx:id="messageErreur" text="Veuillez entrer des valeurs entre 0 et 20" visible="false"/>
         </HBox>
         <HBox>
-            <Button text="Tracer" onAction="#tracer"/>
-            <Button text="Vider" onAction="#clear"/>
+            <Button onAction="#tracer" text="Tracer" />
+            <Button alignment="CENTER_RIGHT" onAction="#clear" text="Vider" />
         </HBox>
     </VBox>
 </HBox>
