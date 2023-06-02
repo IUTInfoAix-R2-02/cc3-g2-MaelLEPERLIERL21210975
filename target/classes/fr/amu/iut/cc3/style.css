@@ -1,4 +1,3 @@
-
 .toile {
     -fx-fill: "white";
     -fx-stroke: "#919090";
@@ -10,7 +9,15 @@
     -fx-stroke: "#919090";
 }
 
+#scene {
+    -fx-background-color: #ADD8E6;
+}
+
 Line {
-    -fx-stroke: "blue";
+    -fx-stroke: "black";
     -fx-stroke-width: 2;
+}
+
+HBox {
+    -fx-spacing: 50px;
 }
